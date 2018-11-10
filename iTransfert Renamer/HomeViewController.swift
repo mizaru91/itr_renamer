@@ -17,7 +17,7 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
     @IBOutlet weak var versionMenu: NSPopUpButton!
     @IBOutlet weak var redaMenu: NSComboBox!
     @IBOutlet weak var jriTxt: NSTextField!
-    @IBOutlet weak var editionMenu: NSPopUpButton!
+    @IBOutlet weak var editionMenu: NSComboBox!
     @IBOutlet weak var lieuMenu: NSTextField!
     @IBOutlet weak var showFilepath: NSTextField!
     @IBOutlet weak var showSanitisedName: NSTextField!
@@ -26,6 +26,7 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
     var redaSelected: String?
     var jriSelected: String?
     var lieuSelected: String?
+    
     
     // Ecoute si l'utilisateur fait sélection dans la liste déroulante des champs Version, rédaction et Edition
     @IBAction func SelectionDidChange(_ sender: Any) {
@@ -69,11 +70,17 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
         if redaMenu.stringValue.isEmpty {
                 redac = "NULL"
         }
+        switch redac {
+            case "France2": redac = "F2"
+            case "France3": redac = "F3"
+            case "FranceInfo": redac = "FI"
+            default: redac = redaMenu.stringValue
+        }
         redaSelected = sanitise(texte: redac)
         
         // On récupère la valeur du menu EDITION
-        var edit: String? = editionMenu.titleOfSelectedItem
-        if editionMenu.titleOfSelectedItem!.isEmpty {
+        var edit: String? = editionMenu.stringValue
+        if editionMenu.stringValue.isEmpty {
             edit = "NULL"
         }
         let editSelected: String? = sanitise(texte: edit)
@@ -201,16 +208,16 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
             redac = "NA"
         }
         switch redac {
-        case "France2": redac = "F2"
-        case "France3": redac = "F3"
-        case "FranceInfo": redac = "FI"
-        default: redac = redaMenu.stringValue
+            case "France2": redac = "F2"
+            case "France3": redac = "F3"
+            case "FranceInfo": redac = "FI"
+            default: redac = redaMenu.stringValue
         }
         redaSelected = sanitise(texte: redac)
         
         // On récupère la valeur du menu EDITION
-        var edit: String? = editionMenu.titleOfSelectedItem
-        if editionMenu.titleOfSelectedItem!.isEmpty {
+        var edit: String? = editionMenu.stringValue
+        if editionMenu.stringValue.isEmpty {
             edit = "NA"
         }
         let editSelected: String? = sanitise(texte: edit)
@@ -240,7 +247,7 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
             NSLog("Chemin inconnu...")
         }
     }
-    // Ecoute si l'utilisateur fait une entrée manuelle dans le champs rédaction
+    // Ecoute si l'utilisateur fait une entrée manuelle dans le champs rédaction et Edition
     func comboBoxWillPopUp(_ notification: Notification) {
         getUserInputs()
     }
@@ -261,7 +268,7 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
         redaMenu.addItems(withObjectValues: ["France2", "France3", "FranceInfo"])
         // Combobox Edition
         editionMenu.removeAllItems()
-        editionMenu.addItems(withTitles: ["12-13", "13h", "19-20", "20h", "Soir3", "Rushes", "Elements", "Internet", "Telematin", "Week-end", "Autre"])
+        editionMenu.addItems(withObjectValues: ["12-13", "13h", "19-20", "20h", "Soir3", "Rushes", "Elements", "Internet", "Telematin", "Week-end", "Autre"])
     }
 
     override var representedObject: Any? {

@@ -339,29 +339,29 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n1w-LT-tMO">
-                                <rect key="frame" x="114" y="276" width="165" height="26"/>
+                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Vj-x6-0oy">
+                                <rect key="frame" x="116" y="276" width="163" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="aet-zb-ova" id="YU8-Kc-fTl">
-                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="menu"/>
-                                    <menu key="menu" id="JSO-es-BJN">
-                                        <items>
-                                            <menuItem title="Item 1" state="on" id="aet-zb-ova"/>
-                                            <menuItem title="Item 2" id="CTq-au-9FP"/>
-                                            <menuItem title="Item 3" id="OtL-ks-dh4"/>
-                                        </items>
-                                    </menu>
-                                </popUpButtonCell>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="u4h-PR-EzL">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <objectValues>
+                                        <string>Item 1</string>
+                                        <string>Item 2</string>
+                                        <string>Item 3</string>
+                                    </objectValues>
+                                </comboBoxCell>
                                 <connections>
-                                    <action selector="SelectionDidChange:" target="XfG-lQ-9wD" id="T4B-gi-dLs"/>
+                                    <action selector="SelectionDidChange:" target="XfG-lQ-9wD" id="v8R-Dx-EMi"/>
+                                    <outlet property="delegate" destination="XfG-lQ-9wD" id="9x4-Wy-EoC"/>
                                 </connections>
-                            </popUpButton>
+                            </comboBox>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="dragView" destination="Qk3-eE-Oke" id="HjU-96-0u5"/>
-                        <outlet property="editionMenu" destination="n1w-LT-tMO" id="jVN-cx-HIJ"/>
+                        <outlet property="editionMenu" destination="7Vj-x6-0oy" id="oWF-R2-x8q"/>
                         <outlet property="imageView" destination="8wk-GL-qrs" id="u9k-wo-jeB"/>
                         <outlet property="jriTxt" destination="2w4-j1-PF7" id="FjN-bL-GyU"/>
                         <outlet property="lieuMenu" destination="qlC-uz-o35" id="bdy-Gk-pjF"/>
