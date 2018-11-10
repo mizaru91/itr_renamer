@@ -9,7 +9,7 @@
 import Cocoa
 //import Foundation
 
-class HomeViewController: NSViewController, NSComboBoxDelegate, NSTextFieldDelegate {
+class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegate, NSTextFieldDelegate {
     @IBOutlet weak var imageView: NSImageView!
     @IBOutlet weak var staticLabel: NSTextField!
     @IBOutlet weak var dragView: DragView!
@@ -17,7 +17,7 @@ class HomeViewController: NSViewController, NSComboBoxDelegate, NSTextFieldDeleg
     @IBOutlet weak var versionMenu: NSPopUpButton!
     @IBOutlet weak var redaMenu: NSComboBox!
     @IBOutlet weak var jriTxt: NSTextField!
-    @IBOutlet weak var editionMenu: NSComboBox!
+    @IBOutlet weak var editionMenu: NSPopUpButton!
     @IBOutlet weak var lieuMenu: NSTextField!
     @IBOutlet weak var showFilepath: NSTextField!
     @IBOutlet weak var showSanitisedName: NSTextField!
@@ -27,9 +27,13 @@ class HomeViewController: NSViewController, NSComboBoxDelegate, NSTextFieldDeleg
     var jriSelected: String?
     var lieuSelected: String?
     
+    // Ecoute si l'utilisateur fait sélection dans la liste déroulante des champs Version, rédaction et Edition
+    @IBAction func SelectionDidChange(_ sender: Any) {
+        getUserInputs()
+    }
     
     let toUppercaseASCIINoSpaces = StringTransform(rawValue: "Latin-ASCII; Upper; [:Separator:] Remove; [:Punctuation:] Remove; [:Mark:] Remove;[:Symbol:] Remove;")
-   
+    
     @IBAction func renameFile(_ sender: NSButton) {
         
         // On récupère la valeur du champs TITRE
@@ -68,8 +72,8 @@ class HomeViewController: NSViewController, NSComboBoxDelegate, NSTextFieldDeleg
         redaSelected = sanitise(texte: redac)
         
         // On récupère la valeur du menu EDITION
-        var edit: String? = editionMenu.stringValue
-        if editionMenu.stringValue.isEmpty {
+        var edit: String? = editionMenu.titleOfSelectedItem
+        if editionMenu.titleOfSelectedItem!.isEmpty {
             edit = "NULL"
         }
         let editSelected: String? = sanitise(texte: edit)
@@ -86,7 +90,7 @@ class HomeViewController: NSViewController, NSComboBoxDelegate, NSTextFieldDeleg
                     let path: String = filepath!.deletingLastPathComponent!.absoluteString
                     // Extrraction de l'extension
                     let ext: String = filepath!.pathExtension!
-                    let renamedpath: String = ("\(path)\(redaSelected!)_\(titleSelected!)_\(jriSelected!)_\(lieuSelected!)__\(infoAbout(url: filepath as! URL)).\(ext)")
+                    let renamedpath: String = ("\(path)\(redaSelected!)_\(editSelected!)_\(versionSelected!)_\(titleSelected!)_\(jriSelected!)_\(lieuSelected!)__\(infoAbout(url: filepath as! URL)).\(ext)")
                     try fileManager.moveItem(at: filepath as! URL, to: URL(string : renamedpath)!)
                 } catch let error as NSError {
                     showModal(alerte: "\(error)")
@@ -99,8 +103,7 @@ class HomeViewController: NSViewController, NSComboBoxDelegate, NSTextFieldDeleg
             showModal(alerte: "Chemin inconnu...")
         }
     }
-    
-    
+
     // Mes fonctions
     func sanitise(texte: String?) -> String {
         let sanitised: String? = texte!.applyingTransform(toUppercaseASCIINoSpaces, reverse: false)!
@@ -161,46 +164,54 @@ class HomeViewController: NSViewController, NSComboBoxDelegate, NSTextFieldDeleg
             return "No information available for \(url.path)"
         }
     }
+    
+
     func getUserInputs() {
         // On récupère la valeur du champs TITRE
         var title: String? = titleTxt.stringValue
         if titleTxt.stringValue.isEmpty {
-            title = "NULL"
+            title = "NA"
         }
         titleSelected = sanitise(texte: title)
         
         // On récupère la valeur du champs JRI
         var jri: String? = jriTxt.stringValue
         if jriTxt.stringValue.isEmpty {
-            jri = "NULL"
+            jri = "NA"
         }
         jriSelected = sanitise(texte: jri)
         
         // On récupère la valeur du champs JRI
         var lieu: String? = lieuMenu.stringValue
         if lieuMenu.stringValue.isEmpty {
-            lieu = "NULL"
+            lieu = "NA"
         }
         lieuSelected = sanitise(texte: lieu)
         
         // On récupère la valeur du menu VERSION
         var vers: String? = versionMenu.titleOfSelectedItem
         if versionMenu.titleOfSelectedItem!.isEmpty {
-            vers = "NULL"
+            vers = "NA"
         }
         let versionSelected: String? = sanitise(texte: vers)
         
         // On récupère la valeur du menu REDACTION
         var redac: String? = redaMenu.stringValue
         if redaMenu.stringValue.isEmpty {
-            redac = "NULL"
+            redac = "NA"
+        }
+        switch redac {
+        case "France2": redac = "F2"
+        case "France3": redac = "F3"
+        case "FranceInfo": redac = "FI"
+        default: redac = redaMenu.stringValue
         }
         redaSelected = sanitise(texte: redac)
         
         // On récupère la valeur du menu EDITION
-        var edit: String? = editionMenu.stringValue
-        if editionMenu.stringValue.isEmpty {
-            edit = "NULL"
+        var edit: String? = editionMenu.titleOfSelectedItem
+        if editionMenu.titleOfSelectedItem!.isEmpty {
+            edit = "NA"
         }
         let editSelected: String? = sanitise(texte: edit)
         
@@ -216,8 +227,7 @@ class HomeViewController: NSViewController, NSComboBoxDelegate, NSTextFieldDeleg
                     let path: String = filepath!.deletingLastPathComponent!.absoluteString
                     // Extrraction de l'extension
                     let ext: String = filepath!.pathExtension!
-                    let renamedpath: String = ("\(redaSelected!)_\(titleSelected!)_\(jriSelected!)_\(lieuSelected!)__\(infoAbout(url: filepath as! URL)).\(ext)")
-                    //try fileManager.moveItem(at: filepath as! URL, to: URL(string : renamedpath)!)
+                    let renamedpath: String = ("\(redaSelected!)_\(editSelected!)_\(versionSelected!)_\(titleSelected!)_\(jriSelected!)_\(lieuSelected!)__\(infoAbout(url: filepath as! URL)).\(ext)")
                     // On modifie la valeur du label pour afficher le nommage
                     showSanitisedName.stringValue = renamedpath
                 } catch let error as NSError {
@@ -230,6 +240,11 @@ class HomeViewController: NSViewController, NSComboBoxDelegate, NSTextFieldDeleg
             NSLog("Chemin inconnu...")
         }
     }
+    // Ecoute si l'utilisateur fait une entrée manuelle dans le champs rédaction
+    func comboBoxWillPopUp(_ notification: Notification) {
+        getUserInputs()
+    }
+    
     override func controlTextDidChange(_ obj: Notification) {
         getUserInputs()
     }
@@ -246,7 +261,7 @@ class HomeViewController: NSViewController, NSComboBoxDelegate, NSTextFieldDeleg
         redaMenu.addItems(withObjectValues: ["France2", "France3", "FranceInfo"])
         // Combobox Edition
         editionMenu.removeAllItems()
-        editionMenu.addItems(withObjectValues: ["12-13", "13h", "19-20", "20h", "Soir3", "Rushes", "Elements", "Internet", "Telematin", "Week-end", "Autre"])
+        editionMenu.addItems(withTitles: ["12-13", "13h", "19-20", "20h", "Soir3", "Rushes", "Elements", "Internet", "Telematin", "Week-end", "Autre"])
     }
 
     override var representedObject: Any? {
@@ -254,11 +269,11 @@ class HomeViewController: NSViewController, NSComboBoxDelegate, NSTextFieldDeleg
         // Update the view, if already loaded.
         }
     }
+    //Calcul de la taille du fichier sélectionné
     func format(bytes: Double) -> String {
         guard bytes > 0 else {
             return "0 bytes"
         }
-        
         // Adapted from http://stackoverflow.com/a/18650828
         let suffixes = ["bytes", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"]
         let k: Double = 1000
