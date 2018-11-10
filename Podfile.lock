@@ -1,0 +1,16 @@
+PODS:
+  - SYFlatButton (1.4)
+
+DEPENDENCIES:
+  - SYFlatButton
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SYFlatButton
+
+SPEC CHECKSUMS:
+  SYFlatButton: 324d51dac27a15e6feb572c17a36f11b1ae5edd5
+
+PODFILE CHECKSUM: 8a1c7090540fee2e471db225554b720bf57be850
+
+COCOAPODS: 1.5.2

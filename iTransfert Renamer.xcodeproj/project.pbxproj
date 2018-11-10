@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		289B98EE1B83658175780792 /* Pods_iTransfert_RenamerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463D43B082613BED8CA80228 /* Pods_iTransfert_RenamerUITests.framework */; };
 		5048B47A218B101E0089BF2B /* DragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5048B479218B101E0089BF2B /* DragView.swift */; };
 		50916ED6218B02BB0064A190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50916ED5218B02BB0064A190 /* AppDelegate.swift */; };
 		50916ED8218B02BB0064A190 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50916ED7218B02BB0064A190 /* HomeViewController.swift */; };
@@ -14,6 +15,9 @@
 		50916EDD218B02BC0064A190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50916EDB218B02BC0064A190 /* Main.storyboard */; };
 		50916EE9218B02BC0064A190 /* iTransfert_RenamerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50916EE8218B02BC0064A190 /* iTransfert_RenamerTests.swift */; };
 		50916EF4218B02BC0064A190 /* iTransfert_RenamerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50916EF3218B02BC0064A190 /* iTransfert_RenamerUITests.swift */; };
+		50CA417721971D0F00D5E179 /* SYFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CA417521971D0E00D5E179 /* SYFlatButton.m */; };
+		8758855BF20015EC2EE75985 /* Pods_iTransfert_Renamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500CF464AF34B73837D68EB4 /* Pods_iTransfert_Renamer.framework */; };
+		B3AD4EB1B9606D60D5ADB445 /* Pods_iTransfert_RenamerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27963EB01179CED6B57E2B1 /* Pods_iTransfert_RenamerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2FAC1AFA948639579B706340 /* Pods-iTransfert RenamerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTransfert RenamerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTransfert RenamerTests/Pods-iTransfert RenamerTests.release.xcconfig"; sourceTree = "<group>"; };
+		463D43B082613BED8CA80228 /* Pods_iTransfert_RenamerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTransfert_RenamerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		500CF464AF34B73837D68EB4 /* Pods_iTransfert_Renamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTransfert_Renamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5048B479218B101E0089BF2B /* DragView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragView.swift; sourceTree = "<group>"; };
 		5074FABA2190FE2000C56885 /* iTransfert Renamer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iTransfert Renamer.entitlements"; sourceTree = "<group>"; };
 		50916ED2218B02BB0064A190 /* iTransfert Renamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTransfert Renamer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +56,14 @@
 		50916EEF218B02BC0064A190 /* iTransfert RenamerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iTransfert RenamerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50916EF3218B02BC0064A190 /* iTransfert_RenamerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTransfert_RenamerUITests.swift; sourceTree = "<group>"; };
 		50916EF5218B02BC0064A190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50CA417521971D0E00D5E179 /* SYFlatButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYFlatButton.m; sourceTree = "<group>"; };
+		50CA417621971D0F00D5E179 /* SYFlatButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYFlatButton.h; sourceTree = "<group>"; };
+		6B6F81F53EDF832B5787DC58 /* Pods-iTransfert Renamer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTransfert Renamer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTransfert Renamer/Pods-iTransfert Renamer.debug.xcconfig"; sourceTree = "<group>"; };
+		AB3A082453843FAAD876376F /* Pods-iTransfert Renamer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTransfert Renamer.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTransfert Renamer/Pods-iTransfert Renamer.release.xcconfig"; sourceTree = "<group>"; };
+		C51F245A52D53E3F597387AC /* Pods-iTransfert RenamerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTransfert RenamerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTransfert RenamerUITests/Pods-iTransfert RenamerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCA36FAEACB399E2955CDE35 /* Pods-iTransfert RenamerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTransfert RenamerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTransfert RenamerTests/Pods-iTransfert RenamerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED2EF1371B7C986B24D6672C /* Pods-iTransfert RenamerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTransfert RenamerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTransfert RenamerUITests/Pods-iTransfert RenamerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F27963EB01179CED6B57E2B1 /* Pods_iTransfert_RenamerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTransfert_RenamerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8758855BF20015EC2EE75985 /* Pods_iTransfert_Renamer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3AD4EB1B9606D60D5ADB445 /* Pods_iTransfert_RenamerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +87,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				289B98EE1B83658175780792 /* Pods_iTransfert_RenamerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		218352FF90A6BD0FE53A8EA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B6F81F53EDF832B5787DC58 /* Pods-iTransfert Renamer.debug.xcconfig */,
+				AB3A082453843FAAD876376F /* Pods-iTransfert Renamer.release.xcconfig */,
+				CCA36FAEACB399E2955CDE35 /* Pods-iTransfert RenamerTests.debug.xcconfig */,
+				2FAC1AFA948639579B706340 /* Pods-iTransfert RenamerTests.release.xcconfig */,
+				C51F245A52D53E3F597387AC /* Pods-iTransfert RenamerUITests.debug.xcconfig */,
+				ED2EF1371B7C986B24D6672C /* Pods-iTransfert RenamerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		351CAC1C140E560703BBD08A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				500CF464AF34B73837D68EB4 /* Pods_iTransfert_Renamer.framework */,
+				F27963EB01179CED6B57E2B1 /* Pods_iTransfert_RenamerTests.framework */,
+				463D43B082613BED8CA80228 /* Pods_iTransfert_RenamerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		50916EC9218B02BB0064A190 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +124,8 @@
 				50916EE7218B02BC0064A190 /* iTransfert RenamerTests */,
 				50916EF2218B02BC0064A190 /* iTransfert RenamerUITests */,
 				50916ED3218B02BB0064A190 /* Products */,
+				218352FF90A6BD0FE53A8EA7 /* Pods */,
+				351CAC1C140E560703BBD08A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +142,8 @@
 		50916ED4218B02BB0064A190 /* iTransfert Renamer */ = {
 			isa = PBXGroup;
 			children = (
+				50CA417621971D0F00D5E179 /* SYFlatButton.h */,
+				50CA417521971D0E00D5E179 /* SYFlatButton.m */,
 				5074FABA2190FE2000C56885 /* iTransfert Renamer.entitlements */,
 				5048B479218B101E0089BF2B /* DragView.swift */,
 				50916ED5218B02BB0064A190 /* AppDelegate.swift */,
@@ -136,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50916EF8218B02BC0064A190 /* Build configuration list for PBXNativeTarget "iTransfert Renamer" */;
 			buildPhases = (
+				E13116DC342639339CC5C4A5 /* [CP] Check Pods Manifest.lock */,
 				50916ECE218B02BB0064A190 /* Sources */,
 				50916ECF218B02BB0064A190 /* Frameworks */,
 				50916ED0218B02BB0064A190 /* Resources */,
+				A6DA6D1720D04CC4EE0A5A50 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50916EFB218B02BC0064A190 /* Build configuration list for PBXNativeTarget "iTransfert RenamerTests" */;
 			buildPhases = (
+				555DF044675FA38F8D621715 /* [CP] Check Pods Manifest.lock */,
 				50916EE0218B02BC0064A190 /* Sources */,
 				50916EE1218B02BC0064A190 /* Frameworks */,
 				50916EE2218B02BC0064A190 /* Resources */,
+				4EB5CA1161D39EDCAAC0B86A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50916EFE218B02BC0064A190 /* Build configuration list for PBXNativeTarget "iTransfert RenamerUITests" */;
 			buildPhases = (
+				A55FF56D52F6BAF323D5CFF5 /* [CP] Check Pods Manifest.lock */,
 				50916EEB218B02BC0064A190 /* Sources */,
 				50916EEC218B02BC0064A190 /* Frameworks */,
 				50916EED218B02BC0064A190 /* Resources */,
+				A473B3A46081168B2DC95191 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,11 +310,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4EB5CA1161D39EDCAAC0B86A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iTransfert RenamerTests/Pods-iTransfert RenamerTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SYFlatButton/SYFlatButton.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SYFlatButton.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTransfert RenamerTests/Pods-iTransfert RenamerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		555DF044675FA38F8D621715 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTransfert RenamerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A473B3A46081168B2DC95191 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iTransfert RenamerUITests/Pods-iTransfert RenamerUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SYFlatButton/SYFlatButton.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SYFlatButton.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTransfert RenamerUITests/Pods-iTransfert RenamerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A55FF56D52F6BAF323D5CFF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTransfert RenamerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6DA6D1720D04CC4EE0A5A50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iTransfert Renamer/Pods-iTransfert Renamer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SYFlatButton/SYFlatButton.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SYFlatButton.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTransfert Renamer/Pods-iTransfert Renamer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E13116DC342639339CC5C4A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTransfert Renamer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		50916ECE218B02BB0064A190 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50CA417721971D0F00D5E179 /* SYFlatButton.m in Sources */,
 				50916ED8218B02BB0064A190 /* HomeViewController.swift in Sources */,
 				50916ED6218B02BB0064A190 /* AppDelegate.swift in Sources */,
 				5048B47A218B101E0089BF2B /* DragView.swift in Sources */,
@@ -428,6 +591,7 @@
 		};
 		50916EF9218B02BC0064A190 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6F81F53EDF832B5787DC58 /* Pods-iTransfert Renamer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +610,7 @@
 		};
 		50916EFA218B02BC0064A190 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB3A082453843FAAD876376F /* Pods-iTransfert Renamer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +629,7 @@
 		};
 		50916EFC218B02BC0064A190 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCA36FAEACB399E2955CDE35 /* Pods-iTransfert RenamerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +650,7 @@
 		};
 		50916EFD218B02BC0064A190 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FAC1AFA948639579B706340 /* Pods-iTransfert RenamerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +671,7 @@
 		};
 		50916EFF218B02BC0064A190 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C51F245A52D53E3F597387AC /* Pods-iTransfert RenamerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +691,7 @@
 		};
 		50916F00218B02BC0064A190 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED2EF1371B7C986B24D6672C /* Pods-iTransfert RenamerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

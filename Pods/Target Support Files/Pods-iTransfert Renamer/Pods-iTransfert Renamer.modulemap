@@ -1,0 +1,6 @@
+framework module Pods_iTransfert_Renamer {
+  umbrella header "Pods-iTransfert Renamer-umbrella.h"
+
+  export *
+  module * { export * }
+}
