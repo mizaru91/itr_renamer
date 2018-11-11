@@ -27,6 +27,16 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
     var jriSelected: String?
     var lieuSelected: String?
     
+    @IBAction func resetToDefaultForm(_ sender: NSButton) {
+        titleTxt.stringValue = ""
+        redaMenu.stringValue = ""
+        jriTxt.stringValue = ""
+        editionMenu.stringValue = ""
+        lieuMenu.stringValue = ""
+        filepath = nil
+        showFilepath.stringValue = ""
+        showSanitisedName.stringValue = ""
+    }
     
     // Ecoute si l'utilisateur fait sélection dans la liste déroulante des champs Version, rédaction et Edition
     @IBAction func SelectionDidChange(_ sender: Any) {
