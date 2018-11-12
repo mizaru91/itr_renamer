@@ -3,92 +3,59 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15281704DB3A6CE4DC78A1176E0DC039 /* SYFlatButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0C3D3E343E907E95F2B2207241C2412 /* SYFlatButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15F753680EECCC061EE5E808D393E531 /* Pods-iTransfert Renamer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 689D61B3284A8E05EA7ADF6AA1BA2603 /* Pods-iTransfert Renamer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F1CC167B9D4F2339B23EB6CD138F264 /* SYFlatButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 849B010E8DF4A40A15490CF8BF09DAA2 /* SYFlatButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AAC8F1399024AD7E67D7B3D9EE08BA8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
-		61AD58560C5989D7417BD745ABEB8A9B /* Pods-iTransfert RenamerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A6A34621C43C1D309ABFAF3459D936 /* Pods-iTransfert RenamerTests-dummy.m */; };
-		64C84114D57500CAF8619182241A58EF /* SYFlatButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC53A1FDBA81A44E93CB4209EA18F3A /* SYFlatButton-dummy.m */; };
-		8D0723698CE61F65BD09DE15B6132E41 /* Pods-iTransfert Renamer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6206D12C182CB436FF02D7FF1E1C8797 /* Pods-iTransfert Renamer-dummy.m */; };
-		D94EE3315291B60E6C5C17A1209F5AED /* Pods-iTransfert RenamerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD1B9ECDB94625FE8ACF4A683DD8D2A0 /* Pods-iTransfert RenamerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D98C71946D35584A0E655BC0CA562396 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
-		DBD78275C396528846ACA34D5232CD60 /* SYFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5282533216BC3A15A3FE03EC5DEEF62E /* SYFlatButton.m */; };
-		EBFF6C9783F90488391F1A90A3263D41 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
-		EDBC0FB3AD9BE8FA29A7DB2153B845D3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
-		F0D9DD1975855DCB1133DB0A9A251820 /* Pods-iTransfert RenamerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CF627A805EAB4EE4FE0382C5F714FF /* Pods-iTransfert RenamerUITests-dummy.m */; };
-		F706150DBEB57DD06B2A5B97707DB047 /* Pods-iTransfert RenamerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B49F96E524E33F44C2EC94091C8A537 /* Pods-iTransfert RenamerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EAD7075CFCCC4F904C98E6E517639DD /* Pods-iTransfert RenamerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B49F96E524E33F44C2EC94091C8A537 /* Pods-iTransfert RenamerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		106F99130D91D3956F4A9004F7AF2CAD /* Pods-iTransfert RenamerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD1B9ECDB94625FE8ACF4A683DD8D2A0 /* Pods-iTransfert RenamerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CBF0191F0F1EC8223BFF98AE138B0BA /* Pods-iTransfert Renamer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 689D61B3284A8E05EA7ADF6AA1BA2603 /* Pods-iTransfert Renamer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C4B7F67DDE4ED3D2BF0B414986005AD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
+		4EF6291A3CD0F86274B96492CCDB5F6B /* Pods-iTransfert RenamerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CF627A805EAB4EE4FE0382C5F714FF /* Pods-iTransfert RenamerUITests-dummy.m */; };
+		A43E7A4E19DDB24F83658609B091F304 /* Pods-iTransfert Renamer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6206D12C182CB436FF02D7FF1E1C8797 /* Pods-iTransfert Renamer-dummy.m */; };
+		AB60DABF4FE58EE0595F7A6D64F6ED67 /* Pods-iTransfert RenamerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A6A34621C43C1D309ABFAF3459D936 /* Pods-iTransfert RenamerTests-dummy.m */; };
+		B6F2EF070874F88569EF4E7C697C3E29 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
+		D6B7F369E05B3B52FB041611DAE639FB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		30B991A34DBD7E7BD51EF31CAA237C13 /* PBXContainerItemProxy */ = {
+		D28220B885BA95FB98F32FB6F37B75B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BDE6D4BA0DADC107C68952D00A3839F0;
+			remoteGlobalIDString = 31F07031B80FB7C9CFE884B18C562A9B;
 			remoteInfo = "Pods-iTransfert Renamer";
 		};
-		44D6F3F2B1998A7075EB11058DF0BDEB /* PBXContainerItemProxy */ = {
+		F98572974CCF7E888C5073A04F80A921 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F83A3DE6AF0B4B141E1DA448543EF392;
-			remoteInfo = SYFlatButton;
-		};
-		5CAD08A28A5CC47D5D9D144353E6E2FE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F83A3DE6AF0B4B141E1DA448543EF392;
-			remoteInfo = SYFlatButton;
-		};
-		5F4A660E03AB0C31D4669018C25B3C42 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F83A3DE6AF0B4B141E1DA448543EF392;
-			remoteInfo = SYFlatButton;
-		};
-		7CDAB8E6C239434C1EFF0A89F672D695 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BDE6D4BA0DADC107C68952D00A3839F0;
+			remoteGlobalIDString = 31F07031B80FB7C9CFE884B18C562A9B;
 			remoteInfo = "Pods-iTransfert Renamer";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0B49F96E524E33F44C2EC94091C8A537 /* Pods-iTransfert RenamerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iTransfert RenamerUITests-umbrella.h"; sourceTree = "<group>"; };
-		1E777FEA9C1609B700BF2F4B4883BEE7 /* Pods_iTransfert_RenamerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTransfert_RenamerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EC53A1FDBA81A44E93CB4209EA18F3A /* SYFlatButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SYFlatButton-dummy.m"; sourceTree = "<group>"; };
+		1F90B691126D07F8215D05BBF7D2E978 /* Pods_iTransfert_Renamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iTransfert_Renamer.framework; path = "Pods-iTransfert Renamer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28009F40513821C89566C94862FFF08D /* Pods-iTransfert Renamer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iTransfert Renamer-frameworks.sh"; sourceTree = "<group>"; };
 		2940E1967301A9CC17AE29A77F03DAA2 /* Pods-iTransfert RenamerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iTransfert RenamerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		298861F9D828D2F96BE40342B8EF1CFD /* SYFlatButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SYFlatButton.modulemap; sourceTree = "<group>"; };
+		30C222B9680CC553E700FE2DFF5B38C2 /* Pods_iTransfert_RenamerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iTransfert_RenamerTests.framework; path = "Pods-iTransfert RenamerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3340EF9CD64307E947ECD2BBE7BC503C /* Pods-iTransfert RenamerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iTransfert RenamerUITests-frameworks.sh"; sourceTree = "<group>"; };
 		345F38E294F2358F489826597E88A77B /* Pods-iTransfert RenamerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iTransfert RenamerTests.release.xcconfig"; sourceTree = "<group>"; };
 		4AADA134DCB2E39429767045E1786DCD /* Pods-iTransfert Renamer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iTransfert Renamer.modulemap"; sourceTree = "<group>"; };
-		5282533216BC3A15A3FE03EC5DEEF62E /* SYFlatButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SYFlatButton.m; path = "../../iTransfert Renamer/SYFlatButton.m"; sourceTree = "<group>"; };
 		59A6A34621C43C1D309ABFAF3459D936 /* Pods-iTransfert RenamerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iTransfert RenamerTests-dummy.m"; sourceTree = "<group>"; };
 		6206D12C182CB436FF02D7FF1E1C8797 /* Pods-iTransfert Renamer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iTransfert Renamer-dummy.m"; sourceTree = "<group>"; };
 		631ED023C6F798F093063DF0A710EF0B /* Pods-iTransfert RenamerUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iTransfert RenamerUITests-resources.sh"; sourceTree = "<group>"; };
 		689D61B3284A8E05EA7ADF6AA1BA2603 /* Pods-iTransfert Renamer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iTransfert Renamer-umbrella.h"; sourceTree = "<group>"; };
-		69CF4A50F674BBA1ECCCA8D6360FF0FB /* SYFlatButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SYFlatButton.xcconfig; sourceTree = "<group>"; };
 		6AE658516668E186FC47D1548A8033B1 /* Pods-iTransfert Renamer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iTransfert Renamer-acknowledgements.plist"; sourceTree = "<group>"; };
 		6CD6C9A66D94FDC27E201E97FFD00FCC /* Pods-iTransfert Renamer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iTransfert Renamer-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6F4C3738B0F5A363A009C4D1C975B018 /* SYFlatButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SYFlatButton-prefix.pch"; sourceTree = "<group>"; };
+		6D873CCFBE5E63EB1A3840FF5622E023 /* Pods_iTransfert_RenamerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iTransfert_RenamerUITests.framework; path = "Pods-iTransfert RenamerUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD46B6C50C16A7461173144FDB7487A /* Pods-iTransfert RenamerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iTransfert RenamerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7120D38C33A87ADD7A244B242CFA15A0 /* Pods-iTransfert RenamerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iTransfert RenamerTests-frameworks.sh"; sourceTree = "<group>"; };
 		7F9A420D153E5A34E19182F5EDB45329 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		849B010E8DF4A40A15490CF8BF09DAA2 /* SYFlatButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SYFlatButton.h; path = "../../iTransfert Renamer/SYFlatButton.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		943C1DA1C15FC7CBAE4C5F0FAD3A973E /* Pods_iTransfert_Renamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTransfert_Renamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		951B8F23E01DA4D2E90F7106930FFEB4 /* Pods-iTransfert RenamerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iTransfert RenamerUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		9561336040F0B6EC2A71D9E6315FC7BA /* SYFlatButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SYFlatButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		98816C477FF84FA621CEC071C80ED453 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EDFC321E9AAB0EC35A84DDA1F872CCB /* Pods-iTransfert RenamerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iTransfert RenamerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A6F04D1C669B0C71F5944702DC6CA472 /* Pods-iTransfert Renamer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iTransfert Renamer.release.xcconfig"; sourceTree = "<group>"; };
 		AC38CFA25965CB0B528ED7A0D0737E72 /* Pods-iTransfert RenamerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iTransfert RenamerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,56 +67,64 @@
 		D9FD9FD99F222423622C50C77C263242 /* Pods-iTransfert RenamerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iTransfert RenamerTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DD1B9ECDB94625FE8ACF4A683DD8D2A0 /* Pods-iTransfert RenamerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iTransfert RenamerTests-umbrella.h"; sourceTree = "<group>"; };
 		DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		E0C3D3E343E907E95F2B2207241C2412 /* SYFlatButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SYFlatButton-umbrella.h"; sourceTree = "<group>"; };
 		E134299AD8B51855A8853626B12F3D4C /* Pods-iTransfert Renamer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iTransfert Renamer-resources.sh"; sourceTree = "<group>"; };
 		E33648C72C315A8C386D23457C0B0C96 /* Pods-iTransfert Renamer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iTransfert Renamer.debug.xcconfig"; sourceTree = "<group>"; };
 		EE387DCD69BE4045BED30157103092CA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6765B921227C36F52F93D8132FDD9EA /* Pods-iTransfert RenamerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iTransfert RenamerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F89CE20DD6490BAAA28B41954DE13BDA /* Pods_iTransfert_RenamerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTransfert_RenamerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1C22B7C448A37C99ECA94A9CBD8B9074 /* Frameworks */ = {
+		035213E28B2886DF4CA4AD25FC6CD623 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D98C71946D35584A0E655BC0CA562396 /* Cocoa.framework in Frameworks */,
+				B6F2EF070874F88569EF4E7C697C3E29 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2475364FC7CBA17570A5AA756B3C0403 /* Frameworks */ = {
+		A5C3CC7F760D2C4628AA93E02830E729 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBFF6C9783F90488391F1A90A3263D41 /* Cocoa.framework in Frameworks */,
+				3C4B7F67DDE4ED3D2BF0B414986005AD /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		255F5455648F7EFCA89382F3C3849FC5 /* Frameworks */ = {
+		D30EF9EC57BDF8405B95494BF48DD8D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDBC0FB3AD9BE8FA29A7DB2153B845D3 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F341A718C62D926B7C025B66B61D61C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4AAC8F1399024AD7E67D7B3D9EE08BA8 /* Cocoa.framework in Frameworks */,
+				D6B7F369E05B3B52FB041611DAE639FB /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		238F7CC59EFA8CA8122FB516CA5BA80D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F90B691126D07F8215D05BBF7D2E978 /* Pods_iTransfert_Renamer.framework */,
+				30C222B9680CC553E700FE2DFF5B38C2 /* Pods_iTransfert_RenamerTests.framework */,
+				6D873CCFBE5E63EB1A3840FF5622E023 /* Pods_iTransfert_RenamerUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				FA7AC8429882A95AA0810A9DCDED54FF /* OS X */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FF9254EAB30AF7A4098B43A89F26F6B /* SYFlatButton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SYFlatButton;
+			path = SYFlatButton;
 			sourceTree = "<group>";
 		};
 		6E3FC6D93BB407A045F7DA5D8BFDB25A /* Pods-iTransfert Renamer */ = {
@@ -175,10 +150,18 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
-				E32F0C192CB410C9E40C36EA1DD6F9AE /* Pods */,
-				EE618EBA60AAB9AE7236DF04A0DAE0DE /* Products */,
+				884CE75C426448E3E3A15DF3C6724056 /* Pods */,
+				238F7CC59EFA8CA8122FB516CA5BA80D /* Products */,
 				DE0FB43CB0EDB7B99968DE4A8276E287 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		884CE75C426448E3E3A15DF3C6724056 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FF9254EAB30AF7A4098B43A89F26F6B /* SYFlatButton */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		A4185235E0032B7E0AEBCECB8C32F729 /* Pods-iTransfert RenamerUITests */ = {
@@ -199,16 +182,6 @@
 			path = "Target Support Files/Pods-iTransfert RenamerUITests";
 			sourceTree = "<group>";
 		};
-		CBB20854D5FE17726442DFA063957142 /* SYFlatButton */ = {
-			isa = PBXGroup;
-			children = (
-				849B010E8DF4A40A15490CF8BF09DAA2 /* SYFlatButton.h */,
-				5282533216BC3A15A3FE03EC5DEEF62E /* SYFlatButton.m */,
-				FB75D15343460DDA05C7B3581CD9349D /* Support Files */,
-			);
-			path = SYFlatButton;
-			sourceTree = "<group>";
-		};
 		DE0FB43CB0EDB7B99968DE4A8276E287 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,14 +190,6 @@
 				A4185235E0032B7E0AEBCECB8C32F729 /* Pods-iTransfert RenamerUITests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		E32F0C192CB410C9E40C36EA1DD6F9AE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CBB20854D5FE17726442DFA063957142 /* SYFlatButton */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		E634A988FE77857AC1ED5E9FF075BDD9 /* Pods-iTransfert RenamerTests */ = {
@@ -245,17 +210,6 @@
 			path = "Target Support Files/Pods-iTransfert RenamerTests";
 			sourceTree = "<group>";
 		};
-		EE618EBA60AAB9AE7236DF04A0DAE0DE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				943C1DA1C15FC7CBAE4C5F0FAD3A973E /* Pods_iTransfert_Renamer.framework */,
-				1E777FEA9C1609B700BF2F4B4883BEE7 /* Pods_iTransfert_RenamerTests.framework */,
-				F89CE20DD6490BAAA28B41954DE13BDA /* Pods_iTransfert_RenamerUITests.framework */,
-				9561336040F0B6EC2A71D9E6315FC7BA /* SYFlatButton.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		FA7AC8429882A95AA0810A9DCDED54FF /* OS X */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,130 +218,87 @@
 			name = "OS X";
 			sourceTree = "<group>";
 		};
-		FB75D15343460DDA05C7B3581CD9349D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				98816C477FF84FA621CEC071C80ED453 /* Info.plist */,
-				298861F9D828D2F96BE40342B8EF1CFD /* SYFlatButton.modulemap */,
-				69CF4A50F674BBA1ECCCA8D6360FF0FB /* SYFlatButton.xcconfig */,
-				1EC53A1FDBA81A44E93CB4209EA18F3A /* SYFlatButton-dummy.m */,
-				6F4C3738B0F5A363A009C4D1C975B018 /* SYFlatButton-prefix.pch */,
-				E0C3D3E343E907E95F2B2207241C2412 /* SYFlatButton-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SYFlatButton";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		37945C01DC3E71AC101872B4B2590D84 /* Headers */ = {
+		3AE684B688BE810942CEEE04E4B96B02 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15281704DB3A6CE4DC78A1176E0DC039 /* SYFlatButton-umbrella.h in Headers */,
-				3F1CC167B9D4F2339B23EB6CD138F264 /* SYFlatButton.h in Headers */,
+				0EAD7075CFCCC4F904C98E6E517639DD /* Pods-iTransfert RenamerUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		39DAA88FE134798693A0218F50D90AA5 /* Headers */ = {
+		F5CE00A71E60135B3253969B1721445A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F706150DBEB57DD06B2A5B97707DB047 /* Pods-iTransfert RenamerUITests-umbrella.h in Headers */,
+				106F99130D91D3956F4A9004F7AF2CAD /* Pods-iTransfert RenamerTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A381EC202E554B6C2C451753D6568B7D /* Headers */ = {
+		FDA67F41BB377F7723B4C478F0FABCB7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D94EE3315291B60E6C5C17A1209F5AED /* Pods-iTransfert RenamerTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F89BCD55B47F3A192A232391B91E4D55 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				15F753680EECCC061EE5E808D393E531 /* Pods-iTransfert Renamer-umbrella.h in Headers */,
+				2CBF0191F0F1EC8223BFF98AE138B0BA /* Pods-iTransfert Renamer-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		941C99D51A1B14105DB6ACAE525FC352 /* Pods-iTransfert RenamerUITests */ = {
+		31F07031B80FB7C9CFE884B18C562A9B /* Pods-iTransfert Renamer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 746D4BC0EF5718EAD6A5CD212E19FD2A /* Build configuration list for PBXNativeTarget "Pods-iTransfert RenamerUITests" */;
+			buildConfigurationList = D131303B96EB29A95EA8F684EEE6C47F /* Build configuration list for PBXNativeTarget "Pods-iTransfert Renamer" */;
 			buildPhases = (
-				FCA477AA96D60F988D7CF0AA6D752D72 /* Sources */,
-				2475364FC7CBA17570A5AA756B3C0403 /* Frameworks */,
-				39DAA88FE134798693A0218F50D90AA5 /* Headers */,
+				197F9B2CC9D14135392B959BAA926E69 /* Sources */,
+				035213E28B2886DF4CA4AD25FC6CD623 /* Frameworks */,
+				FDA67F41BB377F7723B4C478F0FABCB7 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				189888882005327B2D6874586974DFD4 /* PBXTargetDependency */,
-				24945C97A2F0A1F92A1A6D08FE909E6D /* PBXTargetDependency */,
-			);
-			name = "Pods-iTransfert RenamerUITests";
-			productName = "Pods-iTransfert RenamerUITests";
-			productReference = F89CE20DD6490BAAA28B41954DE13BDA /* Pods_iTransfert_RenamerUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BDE6D4BA0DADC107C68952D00A3839F0 /* Pods-iTransfert Renamer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 51DF2481360425CE82444585705CF03B /* Build configuration list for PBXNativeTarget "Pods-iTransfert Renamer" */;
-			buildPhases = (
-				365C09BEF27B13B4BD8115DF094DF097 /* Sources */,
-				9F341A718C62D926B7C025B66B61D61C /* Frameworks */,
-				F89BCD55B47F3A192A232391B91E4D55 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				21A83E1AD56BD26E405F36333F24DFEB /* PBXTargetDependency */,
 			);
 			name = "Pods-iTransfert Renamer";
 			productName = "Pods-iTransfert Renamer";
-			productReference = 943C1DA1C15FC7CBAE4C5F0FAD3A973E /* Pods_iTransfert_Renamer.framework */;
+			productReference = 1F90B691126D07F8215D05BBF7D2E978 /* Pods_iTransfert_Renamer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EF6CCAF9AC05C87A550BB2EC587A6269 /* Pods-iTransfert RenamerTests */ = {
+		54DB5336B4325078E24B0D05EB7CECD1 /* Pods-iTransfert RenamerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A03B601339A80077382F6ACC15C2F470 /* Build configuration list for PBXNativeTarget "Pods-iTransfert RenamerTests" */;
+			buildConfigurationList = 8B75C4D045DA8F48F8648091EE6E9F94 /* Build configuration list for PBXNativeTarget "Pods-iTransfert RenamerTests" */;
 			buildPhases = (
-				2EB32411DCBFF212A33480A36CF56D7B /* Sources */,
-				255F5455648F7EFCA89382F3C3849FC5 /* Frameworks */,
-				A381EC202E554B6C2C451753D6568B7D /* Headers */,
+				940B73C6DB98DDD146817C0C5B7807BA /* Sources */,
+				D30EF9EC57BDF8405B95494BF48DD8D1 /* Frameworks */,
+				F5CE00A71E60135B3253969B1721445A /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0079EC4E9653EF30E6C4B38D9ADC3A69 /* PBXTargetDependency */,
-				E4ED64970FDF2E38B4FC0A02C186235F /* PBXTargetDependency */,
+				66110F5BEEA4A977809EE1D8E5663955 /* PBXTargetDependency */,
 			);
 			name = "Pods-iTransfert RenamerTests";
 			productName = "Pods-iTransfert RenamerTests";
-			productReference = 1E777FEA9C1609B700BF2F4B4883BEE7 /* Pods_iTransfert_RenamerTests.framework */;
+			productReference = 30C222B9680CC553E700FE2DFF5B38C2 /* Pods_iTransfert_RenamerTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F83A3DE6AF0B4B141E1DA448543EF392 /* SYFlatButton */ = {
+		9F912FD26728CB9DEDC9F9F647B63180 /* Pods-iTransfert RenamerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 640A838AD84EEED6A91B4174DD84FA27 /* Build configuration list for PBXNativeTarget "SYFlatButton" */;
+			buildConfigurationList = 8F45DCAB6F5D408879822B9E41318094 /* Build configuration list for PBXNativeTarget "Pods-iTransfert RenamerUITests" */;
 			buildPhases = (
-				7D315CC7266A22728EEA6D2B9F5D3F45 /* Sources */,
-				1C22B7C448A37C99ECA94A9CBD8B9074 /* Frameworks */,
-				37945C01DC3E71AC101872B4B2590D84 /* Headers */,
+				5CDCB3D28A9972ABE14E8F19657F4890 /* Sources */,
+				A5C3CC7F760D2C4628AA93E02830E729 /* Frameworks */,
+				3AE684B688BE810942CEEE04E4B96B02 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A9315FBA4BED16B7100DC7586F4C9689 /* PBXTargetDependency */,
 			);
-			name = SYFlatButton;
-			productName = SYFlatButton;
-			productReference = 9561336040F0B6EC2A71D9E6315FC7BA /* SYFlatButton.framework */;
+			name = "Pods-iTransfert RenamerUITests";
+			productName = "Pods-iTransfert RenamerUITests";
+			productReference = 6D873CCFBE5E63EB1A3840FF5622E023 /* Pods_iTransfert_RenamerUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -407,91 +318,63 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = EE618EBA60AAB9AE7236DF04A0DAE0DE /* Products */;
+			productRefGroup = 238F7CC59EFA8CA8122FB516CA5BA80D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BDE6D4BA0DADC107C68952D00A3839F0 /* Pods-iTransfert Renamer */,
-				EF6CCAF9AC05C87A550BB2EC587A6269 /* Pods-iTransfert RenamerTests */,
-				941C99D51A1B14105DB6ACAE525FC352 /* Pods-iTransfert RenamerUITests */,
-				F83A3DE6AF0B4B141E1DA448543EF392 /* SYFlatButton */,
+				31F07031B80FB7C9CFE884B18C562A9B /* Pods-iTransfert Renamer */,
+				54DB5336B4325078E24B0D05EB7CECD1 /* Pods-iTransfert RenamerTests */,
+				9F912FD26728CB9DEDC9F9F647B63180 /* Pods-iTransfert RenamerUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2EB32411DCBFF212A33480A36CF56D7B /* Sources */ = {
+		197F9B2CC9D14135392B959BAA926E69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61AD58560C5989D7417BD745ABEB8A9B /* Pods-iTransfert RenamerTests-dummy.m in Sources */,
+				A43E7A4E19DDB24F83658609B091F304 /* Pods-iTransfert Renamer-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		365C09BEF27B13B4BD8115DF094DF097 /* Sources */ = {
+		5CDCB3D28A9972ABE14E8F19657F4890 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D0723698CE61F65BD09DE15B6132E41 /* Pods-iTransfert Renamer-dummy.m in Sources */,
+				4EF6291A3CD0F86274B96492CCDB5F6B /* Pods-iTransfert RenamerUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D315CC7266A22728EEA6D2B9F5D3F45 /* Sources */ = {
+		940B73C6DB98DDD146817C0C5B7807BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64C84114D57500CAF8619182241A58EF /* SYFlatButton-dummy.m in Sources */,
-				DBD78275C396528846ACA34D5232CD60 /* SYFlatButton.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FCA477AA96D60F988D7CF0AA6D752D72 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F0D9DD1975855DCB1133DB0A9A251820 /* Pods-iTransfert RenamerUITests-dummy.m in Sources */,
+				AB60DABF4FE58EE0595F7A6D64F6ED67 /* Pods-iTransfert RenamerTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0079EC4E9653EF30E6C4B38D9ADC3A69 /* PBXTargetDependency */ = {
+		66110F5BEEA4A977809EE1D8E5663955 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-iTransfert Renamer";
-			target = BDE6D4BA0DADC107C68952D00A3839F0 /* Pods-iTransfert Renamer */;
-			targetProxy = 30B991A34DBD7E7BD51EF31CAA237C13 /* PBXContainerItemProxy */;
+			target = 31F07031B80FB7C9CFE884B18C562A9B /* Pods-iTransfert Renamer */;
+			targetProxy = D28220B885BA95FB98F32FB6F37B75B7 /* PBXContainerItemProxy */;
 		};
-		189888882005327B2D6874586974DFD4 /* PBXTargetDependency */ = {
+		A9315FBA4BED16B7100DC7586F4C9689 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-iTransfert Renamer";
-			target = BDE6D4BA0DADC107C68952D00A3839F0 /* Pods-iTransfert Renamer */;
-			targetProxy = 7CDAB8E6C239434C1EFF0A89F672D695 /* PBXContainerItemProxy */;
-		};
-		21A83E1AD56BD26E405F36333F24DFEB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SYFlatButton;
-			target = F83A3DE6AF0B4B141E1DA448543EF392 /* SYFlatButton */;
-			targetProxy = 5CAD08A28A5CC47D5D9D144353E6E2FE /* PBXContainerItemProxy */;
-		};
-		24945C97A2F0A1F92A1A6D08FE909E6D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SYFlatButton;
-			target = F83A3DE6AF0B4B141E1DA448543EF392 /* SYFlatButton */;
-			targetProxy = 5F4A660E03AB0C31D4669018C25B3C42 /* PBXContainerItemProxy */;
-		};
-		E4ED64970FDF2E38B4FC0A02C186235F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SYFlatButton;
-			target = F83A3DE6AF0B4B141E1DA448543EF392 /* SYFlatButton */;
-			targetProxy = 44D6F3F2B1998A7075EB11058DF0BDEB /* PBXContainerItemProxy */;
+			target = 31F07031B80FB7C9CFE884B18C562A9B /* Pods-iTransfert Renamer */;
+			targetProxy = F98572974CCF7E888C5073A04F80A921 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		301C0649A07A102F80E4A70676D43ABE /* Debug */ = {
+		1DE8F7BD0FAED36670C9FAC28A1E44B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E33648C72C315A8C386D23457C0B0C96 /* Pods-iTransfert Renamer.debug.xcconfig */;
+			baseConfigurationReference = 951B8F23E01DA4D2E90F7106930FFEB4 /* Pods-iTransfert RenamerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -506,12 +389,16 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-iTransfert Renamer/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-iTransfert RenamerUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-iTransfert Renamer/Pods-iTransfert Renamer.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-iTransfert RenamerUITests/Pods-iTransfert RenamerUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -524,7 +411,7 @@
 			};
 			name = Debug;
 		};
-		3FA12CEFB8D2CCA4599C41C6F979E55A /* Debug */ = {
+		56DD644067C25103520632852C92E098 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6FD46B6C50C16A7461173144FDB7487A /* Pods-iTransfert RenamerTests.debug.xcconfig */;
 			buildSettings = {
@@ -543,7 +430,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Target Support Files/Pods-iTransfert RenamerTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MODULEMAP_FILE = "Target Support Files/Pods-iTransfert RenamerTests/Pods-iTransfert RenamerTests.modulemap";
@@ -559,10 +450,11 @@
 			};
 			name = Debug;
 		};
-		4DF537B3FB0CAE3BED463001DD0B5892 /* Release */ = {
+		69B97BB14A513FB7BE627310A157DB5F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69CF4A50F674BBA1ECCCA8D6360FF0FB /* SYFlatButton.xcconfig */;
+			baseConfigurationReference = AC38CFA25965CB0B528ED7A0D0737E72 /* Pods-iTransfert RenamerUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -575,57 +467,29 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/SYFlatButton/SYFlatButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SYFlatButton/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-iTransfert RenamerUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MODULEMAP_FILE = "Target Support Files/SYFlatButton/SYFlatButton.modulemap";
-				PRODUCT_MODULE_NAME = SYFlatButton;
-				PRODUCT_NAME = SYFlatButton;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-iTransfert RenamerUITests/Pods-iTransfert RenamerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		62278D24107635A451749F824EB1EFB2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69CF4A50F674BBA1ECCCA8D6360FF0FB /* SYFlatButton.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/SYFlatButton/SYFlatButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SYFlatButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MODULEMAP_FILE = "Target Support Files/SYFlatButton/SYFlatButton.modulemap";
-				PRODUCT_MODULE_NAME = SYFlatButton;
-				PRODUCT_NAME = SYFlatButton;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7329F38CBB8D2C9A5A7E0F6E26267563 /* Release */ = {
+		80F8D8EAE3D4B1D0FAD1E38231933C0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A6F04D1C669B0C71F5944702DC6CA472 /* Pods-iTransfert Renamer.release.xcconfig */;
 			buildSettings = {
@@ -644,7 +508,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Target Support Files/Pods-iTransfert Renamer/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MODULEMAP_FILE = "Target Support Files/Pods-iTransfert Renamer/Pods-iTransfert Renamer.modulemap";
@@ -723,9 +591,9 @@
 			};
 			name = Debug;
 		};
-		921EACF5078E79EBDCC8C2A9066C518A /* Release */ = {
+		9C999C9A3C624611C49375FB61C5159D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 345F38E294F2358F489826597E88A77B /* Pods-iTransfert RenamerTests.release.xcconfig */;
+			baseConfigurationReference = E33648C72C315A8C386D23457C0B0C96 /* Pods-iTransfert Renamer.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -740,47 +608,16 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-iTransfert RenamerTests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-iTransfert Renamer/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-iTransfert RenamerTests/Pods-iTransfert RenamerTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		93BB745EE29AA1F32F116A9D14B8B143 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 951B8F23E01DA4D2E90F7106930FFEB4 /* Pods-iTransfert RenamerUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-iTransfert RenamerUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-iTransfert RenamerUITests/Pods-iTransfert RenamerUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-iTransfert Renamer/Pods-iTransfert Renamer.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -792,41 +629,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		C801D2EDF077FB0D252BF3828146EE76 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC38CFA25965CB0B528ED7A0D0737E72 /* Pods-iTransfert RenamerUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-iTransfert RenamerUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-iTransfert RenamerUITests/Pods-iTransfert RenamerUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		E574923E2959CFEF4FEBC7B272DBC6AD /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -886,6 +688,45 @@
 			};
 			name = Release;
 		};
+		F1AAB7E0B45A09A75202089EDD949A4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 345F38E294F2358F489826597E88A77B /* Pods-iTransfert RenamerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-iTransfert RenamerTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-iTransfert RenamerTests/Pods-iTransfert RenamerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -898,38 +739,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		51DF2481360425CE82444585705CF03B /* Build configuration list for PBXNativeTarget "Pods-iTransfert Renamer" */ = {
+		8B75C4D045DA8F48F8648091EE6E9F94 /* Build configuration list for PBXNativeTarget "Pods-iTransfert RenamerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				301C0649A07A102F80E4A70676D43ABE /* Debug */,
-				7329F38CBB8D2C9A5A7E0F6E26267563 /* Release */,
+				56DD644067C25103520632852C92E098 /* Debug */,
+				F1AAB7E0B45A09A75202089EDD949A4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		640A838AD84EEED6A91B4174DD84FA27 /* Build configuration list for PBXNativeTarget "SYFlatButton" */ = {
+		8F45DCAB6F5D408879822B9E41318094 /* Build configuration list for PBXNativeTarget "Pods-iTransfert RenamerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				62278D24107635A451749F824EB1EFB2 /* Debug */,
-				4DF537B3FB0CAE3BED463001DD0B5892 /* Release */,
+				1DE8F7BD0FAED36670C9FAC28A1E44B5 /* Debug */,
+				69B97BB14A513FB7BE627310A157DB5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		746D4BC0EF5718EAD6A5CD212E19FD2A /* Build configuration list for PBXNativeTarget "Pods-iTransfert RenamerUITests" */ = {
+		D131303B96EB29A95EA8F684EEE6C47F /* Build configuration list for PBXNativeTarget "Pods-iTransfert Renamer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				93BB745EE29AA1F32F116A9D14B8B143 /* Debug */,
-				C801D2EDF077FB0D252BF3828146EE76 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A03B601339A80077382F6ACC15C2F470 /* Build configuration list for PBXNativeTarget "Pods-iTransfert RenamerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3FA12CEFB8D2CCA4599C41C6F979E55A /* Debug */,
-				921EACF5078E79EBDCC8C2A9066C518A /* Release */,
+				9C999C9A3C624611C49375FB61C5159D /* Debug */,
+				80F8D8EAE3D4B1D0FAD1E38231933C0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

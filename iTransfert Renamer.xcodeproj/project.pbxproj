@@ -185,7 +185,6 @@
 				50916ECE218B02BB0064A190 /* Sources */,
 				50916ECF218B02BB0064A190 /* Frameworks */,
 				50916ED0218B02BB0064A190 /* Resources */,
-				A6DA6D1720D04CC4EE0A5A50 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,7 +203,6 @@
 				50916EE0218B02BC0064A190 /* Sources */,
 				50916EE1218B02BC0064A190 /* Frameworks */,
 				50916EE2218B02BC0064A190 /* Resources */,
-				4EB5CA1161D39EDCAAC0B86A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,7 +222,6 @@
 				50916EEB218B02BC0064A190 /* Sources */,
 				50916EEC218B02BC0064A190 /* Frameworks */,
 				50916EED218B02BC0064A190 /* Resources */,
-				A473B3A46081168B2DC95191 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,24 +308,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4EB5CA1161D39EDCAAC0B86A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iTransfert RenamerTests/Pods-iTransfert RenamerTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SYFlatButton/SYFlatButton.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SYFlatButton.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTransfert RenamerTests/Pods-iTransfert RenamerTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		555DF044675FA38F8D621715 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -347,24 +326,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A473B3A46081168B2DC95191 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iTransfert RenamerUITests/Pods-iTransfert RenamerUITests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SYFlatButton/SYFlatButton.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SYFlatButton.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTransfert RenamerUITests/Pods-iTransfert RenamerUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A55FF56D52F6BAF323D5CFF5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -381,24 +342,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A6DA6D1720D04CC4EE0A5A50 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iTransfert Renamer/Pods-iTransfert Renamer-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SYFlatButton/SYFlatButton.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SYFlatButton.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTransfert Renamer/Pods-iTransfert Renamer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E13116DC342639339CC5C4A5 /* [CP] Check Pods Manifest.lock */ = {

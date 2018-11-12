@@ -8,7 +8,6 @@ target 'iTransfert Renamer' do
   use_frameworks!
   # Pods for iTransfert Renamer
   pod 'SYFlatButton'
-  pod 'TextFieldEffects'
   target 'iTransfert RenamerTests' do
     inherit! :search_paths
     # Pods for testing

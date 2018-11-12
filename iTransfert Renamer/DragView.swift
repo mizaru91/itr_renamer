@@ -17,7 +17,7 @@ class DragView: NSView {
     var delegate: DragViewDelegate?
     //1
     private var fileTypeIsOk = false
-    private var acceptedFileExtensions = ["jpg","png","mov"]
+    private var acceptedFileExtensions = ["aac","aif","aiff","avi","bmp","dxf","fla","flac","flv","ico","gif","jpg","jpeg","mov","mp2","mp3","mp4","mpg","mpeg","mxf","ogg","png","psd","raw","svg","tga","tif","tiff","vsd","wav","wma","wmv"]
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)

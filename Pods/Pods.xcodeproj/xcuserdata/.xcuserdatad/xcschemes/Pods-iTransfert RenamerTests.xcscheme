@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EF6CCAF9AC05C87A550BB2EC587A6269"
+               BlueprintIdentifier = "54DB5336B4325078E24B0D05EB7CECD1"
                BlueprintName = "Pods-iTransfert RenamerTests"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Pods-iTransfert RenamerTests.framework">
