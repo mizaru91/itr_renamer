@@ -469,6 +469,7 @@ ci-dessous...</string>
                         <outlet property="jriTxt" destination="2w4-j1-PF7" id="FjN-bL-GyU"/>
                         <outlet property="lieuMenu" destination="qlC-uz-o35" id="bdy-Gk-pjF"/>
                         <outlet property="redaMenu" destination="qqL-wb-YEm" id="7h7-Gh-zqj"/>
+                        <outlet property="renameFileButton" destination="bJP-iR-PoQ" id="rju-sN-VSa"/>
                         <outlet property="resetToDefaultForm" destination="cqL-hj-sto" id="Qz2-ki-zHA"/>
                         <outlet property="showFilepath" destination="JTX-Es-rZA" id="jzV-VG-m44"/>
                         <outlet property="showSanitisedName" destination="HSW-zg-Ykq" id="hAa-2p-Khi"/>

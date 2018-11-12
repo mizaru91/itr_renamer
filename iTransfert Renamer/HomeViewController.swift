@@ -21,6 +21,7 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
     @IBOutlet weak var lieuMenu: NSTextField!
     @IBOutlet weak var showFilepath: NSTextField!
     @IBOutlet weak var showSanitisedName: NSTextField!
+    @IBOutlet weak var renameFileButton: NSButton!
     var filepath: NSURL?
     var titleSelected: String?
     var redaSelected: String?
@@ -36,6 +37,7 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
         filepath = nil
         showFilepath.stringValue = ""
         showSanitisedName.stringValue = ""
+        renameFileButton.isEnabled = false
     }
     
     // Ecoute si l'utilisateur fait sélection dans la liste déroulante des champs Version, rédaction et Edition
@@ -97,6 +99,7 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
         
         // On teste la présence d'un fichier dropé avant de travailler dessus.
         if filepath != nil {
+            renameFileButton.isEnabled = true
             /*:     Phase de renommage du fichier, si le chemin du fichier est connu
              Create a FileManager instance                                          */
             let fileManager = FileManager.default
@@ -109,6 +112,7 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
                     let ext: String = filepath!.pathExtension!
                     let renamedpath: String = ("\(path)\(redaSelected!)_\(editSelected!)_\(versionSelected!)_\(titleSelected!)_\(jriSelected!)_\(lieuSelected!)__\(infoAbout(url: filepath as! URL)).\(ext)")
                     try fileManager.moveItem(at: filepath as! URL, to: URL(string : renamedpath)!)
+                    renameFileButton.isEnabled = false
                 } catch let error as NSError {
                     showModal(alerte: "\(error)")
                 }
@@ -117,6 +121,7 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
             //NSLog(self.filepath!.absoluteString!)
             }
         } else {
+            //renameFileButton.isEnabled = false
             showModal(alerte: "Merci de sélectionner un fichier.")
         }
     }
@@ -234,6 +239,7 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
         
         // On teste la présence d'un fichier dropé avant de travailler dessus.
         if filepath != nil {
+            renameFileButton.isEnabled = true
             /*:     Phase de renommage du fichier, si le chemin du fichier est connu
              Create a FileManager instance                                          */
             let fileManager = FileManager.default
@@ -254,6 +260,7 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
                 NSLog("Fichier introuvable, merci de vérifier le chemin: \(filepath!.path!)")
             }
         } else {
+            renameFileButton.isEnabled = false
             NSLog("Merci de sélectionner un fichier.")
         }
     }
@@ -268,6 +275,8 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        renameFileButton.isEnabled = false
         // Do any additional setup after loading the view.
         dragView.delegate = self
         // Combobox Rédaction
@@ -320,6 +329,7 @@ extension HomeViewController: DragViewDelegate {
     func dragView(didDragFileWith URL: NSURL) {
         self.filepath = URL
         self.showFilepath.stringValue = URL.path ?? "Désolé, information de chemin, non disponible"
+        self.renameFileButton.isEnabled = true
         //print(self.filepath ?? "Désolé, information de chemin, non disponible")
     }
 }
