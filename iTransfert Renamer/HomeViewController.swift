@@ -117,7 +117,7 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
             //NSLog(self.filepath!.absoluteString!)
             }
         } else {
-            showModal(alerte: "Chemin inconnu...")
+            showModal(alerte: "Merci de sélectionner un fichier.")
         }
     }
 
@@ -254,7 +254,7 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
                 NSLog("Fichier introuvable, merci de vérifier le chemin: \(filepath!.path!)")
             }
         } else {
-            NSLog("Chemin inconnu...")
+            NSLog("Merci de sélectionner un fichier.")
         }
     }
     // Ecoute si l'utilisateur fait une entrée manuelle dans le champs rédaction et Edition
