@@ -37,7 +37,7 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
         filepath = nil
         showFilepath.stringValue = ""
         showSanitisedName.stringValue = ""
-        renameFileButton.isEnabled = false
+        setButtonStateToActiv(status: false)
     }
     
     // Ecoute si l'utilisateur fait sélection dans la liste déroulante des champs Version, rédaction et Edition
@@ -99,7 +99,6 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
         
         // On teste la présence d'un fichier dropé avant de travailler dessus.
         if filepath != nil {
-            renameFileButton.isEnabled = true
             /*:     Phase de renommage du fichier, si le chemin du fichier est connu
              Create a FileManager instance                                          */
             let fileManager = FileManager.default
@@ -112,7 +111,7 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
                     let ext: String = filepath!.pathExtension!
                     let renamedpath: String = ("\(path)\(redaSelected!)_\(editSelected!)_\(versionSelected!)_\(titleSelected!)_\(jriSelected!)_\(lieuSelected!)__\(infoAbout(url: filepath as! URL)).\(ext)")
                     try fileManager.moveItem(at: filepath as! URL, to: URL(string : renamedpath)!)
-                    renameFileButton.isEnabled = false
+                    setButtonStateToActiv(status: false)
                 } catch let error as NSError {
                     showModal(alerte: "\(error)")
                 }
@@ -121,7 +120,7 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
             //NSLog(self.filepath!.absoluteString!)
             }
         } else {
-            //renameFileButton.isEnabled = false
+            setButtonStateToActiv(status: false)
             showModal(alerte: "Merci de sélectionner un fichier.")
         }
     }
@@ -239,7 +238,7 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
         
         // On teste la présence d'un fichier dropé avant de travailler dessus.
         if filepath != nil {
-            renameFileButton.isEnabled = true
+            setButtonStateToActiv(status: true)
             /*:     Phase de renommage du fichier, si le chemin du fichier est connu
              Create a FileManager instance                                          */
             let fileManager = FileManager.default
@@ -260,7 +259,7 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
                 NSLog("Fichier introuvable, merci de vérifier le chemin: \(filepath!.path!)")
             }
         } else {
-            renameFileButton.isEnabled = false
+            setButtonStateToActiv(status: false)
             NSLog("Merci de sélectionner un fichier.")
         }
     }
@@ -268,7 +267,19 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
     func comboBoxWillPopUp(_ notification: Notification) {
         getUserInputs()
     }
-    
+    // Active ou désactive le bouton "Renommer"
+    func setButtonStateToActiv(status: Bool) {
+        if status == true {
+            renameFileButton.isEnabled = true
+            // Les couleurs RGB dans l'espace "Core Graphics" se calculent sur 1.0 -> couleur/255
+            renameFileButton.layer?.backgroundColor = NSColor.init(red: 0.16, green: 0.6, blue: 0.99, alpha: 1.0).cgColor
+            renameFileButton.layer?.borderColor = NSColor.init(red: 0.16, green: 0.6, blue: 0.99, alpha: 1.0).cgColor
+        } else {
+            renameFileButton.isEnabled = false
+            renameFileButton.layer?.backgroundColor = NSColor.gray.cgColor
+            renameFileButton.layer?.borderColor = NSColor.gray.cgColor
+        }
+    }
     override func controlTextDidChange(_ obj: Notification) {
         getUserInputs()
     }
@@ -276,7 +287,7 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        renameFileButton.isEnabled = false
+        setButtonStateToActiv(status: false)
         // Do any additional setup after loading the view.
         dragView.delegate = self
         // Combobox Rédaction
@@ -329,7 +340,7 @@ extension HomeViewController: DragViewDelegate {
     func dragView(didDragFileWith URL: NSURL) {
         self.filepath = URL
         self.showFilepath.stringValue = URL.path ?? "Désolé, information de chemin, non disponible"
-        self.renameFileButton.isEnabled = true
+        setButtonStateToActiv(status: true)
         //print(self.filepath ?? "Désolé, information de chemin, non disponible")
     }
 }
