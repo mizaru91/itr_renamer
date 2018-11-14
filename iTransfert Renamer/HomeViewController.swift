@@ -22,6 +22,7 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
     @IBOutlet weak var showFilepath: NSTextField!
     @IBOutlet weak var showSanitisedName: NSTextField!
     @IBOutlet weak var renameFileButton: NSButton!
+    @IBOutlet weak var resetFormBtn: NSButton!
     var filepath: NSURL?
     var titleSelected: String?
     var redaSelected: String?
@@ -299,8 +300,18 @@ class HomeViewController: NSViewController, NSPopoverDelegate, NSComboBoxDelegat
         // Combobox Edition
         editionMenu.removeAllItems()
         editionMenu.addItems(withObjectValues: ["12-13", "13h", "19-20", "20h", "Soir3", "Rushes", "Elements", "Internet", "Telematin", "Week-end", "Autre"])
+        // Implementing Hover effect on Buttons
+        let area = NSTrackingArea.init(rect: resetFormBtn.bounds, options: [NSTrackingAreaOptions.mouseEnteredAndExited, NSTrackingAreaOptions.activeAlways], owner: self, userInfo: nil)
+        resetFormBtn.addTrackingArea(area)
     }
-
+    // Overriding mouseevents for debugging purpose
+    override func mouseEntered(with event: NSEvent) {
+            print("Entered")
+    }
+    
+    override func mouseExited(with event: NSEvent) {
+        print("Exited")
+    }
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
