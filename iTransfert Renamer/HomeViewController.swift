@@ -352,6 +352,7 @@ extension HomeViewController: DragViewDelegate {
         self.filepath = URL
         self.showFilepath.stringValue = URL.path ?? "Désolé, information de chemin, non disponible"
         setButtonStateToActiv(status: true)
+        titleTxt.stringValue = URL.deletingPathExtension!.lastPathComponent
         //print(self.filepath ?? "Désolé, information de chemin, non disponible")
     }
 }
